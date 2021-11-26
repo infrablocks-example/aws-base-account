@@ -1,0 +1,17 @@
+---
+vars:
+  region: "%{hiera('region')}"
+
+  account_alias: "%{hiera('account_alias')}"
+  minimum_password_length: "%{hiera('minimum_password_length')}"
+
+  admin_public_gpg_key_path: "%{hiera('admin_public_gpg_key_path')}"
+
+  admin_assumable_by_account_ids: "%{hiera('admin_assumable_by_account_ids')}"
+  read_only_assumable_by_account_ids: "%{hiera('read_only_assumable_by_account_ids')}"
+
+backend_config:
+  bucket: "%{hiera('common_state_bucket_name')}"
+  key: "%{hiera('common_state_key')}"
+  region: "%{hiera('common_state_bucket_region')}"
+  encrypt: "%{hiera('common_state_bucket_is_encrypted')}"

@@ -1,0 +1,17 @@
+---
+# General
+account_id: "%{hiera('ibe_development_molybdenum_account_id')}"
+account_alias: "%{hiera('deployment_identifier')}"
+
+admin_assumable_by_account_ids:
+  - "%{hiera('ibe_root_account_id')}"
+  - "%{hiera('ibe_management_account_id')}"
+read_only_assumable_by_account_ids:
+  - "%{hiera('ibe_root_account_id')}"
+  - "%{hiera('ibe_management_account_id')}"
+
+# State
+common_state_bucket_name: "%{hiera('storage_bucket_name')}"
+common_state_key: "common/deployment-state/default.tfstate"
+common_state_bucket_region: "%{hiera('region')}"
+common_state_bucket_is_encrypted: "true"
