@@ -14,8 +14,8 @@ minimum_password_length: 32
 
 admin_public_gpg_key_path: "%{cwd}/config/secrets/gpg/admin.gpg.public"
 
-ibe_root_account_id: "635746531358"
-ibe_parent_account_id: "427607157647"
-ibe_management_account_id: "997812904408"
-ibe_development_molybdenum_account_id: "770285404576"
-ibe_production_holmium_account_id: "306130939196"
+ibe_root_account_id: "111005169881"
+ibe_parent_account_id: "678242087257"
+ibe_management_account_id: "939041519219"
+ibe_development_molybdenum_account_id: "086744734665"
+ibe_production_holmium_account_id: "413507235430"
